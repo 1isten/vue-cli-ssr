@@ -1,5 +1,7 @@
 # vue-cli-ssr
 
+Vue CLI 4 project configured to support [SSR](https://ssr.vuejs.org/).
+
 ## Project setup
 ```
 npm install
@@ -15,10 +17,7 @@ npm run serve
 npm run build
 ```
 
-### Lints and fixes files
+### Run project
 ```
-npm run lint
+npm start
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
