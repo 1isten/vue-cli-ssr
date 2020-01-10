@@ -7,17 +7,14 @@ Vue CLI 4 project configured to support [SSR](https://ssr.vuejs.org/).
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compiles and hot-reloads for development (SPA)
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compiles and minifies for production (SSR)
 ```
 npm run build
-```
 
-### Run project
-```
 npm start
 ```
