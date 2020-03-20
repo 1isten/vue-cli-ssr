@@ -1,5 +1,3 @@
-/* eslint-disable import/prefer-default-export */
-
 import { sync } from 'vuex-router-sync';
 import Vue from 'vue';
 import App from './App.vue';
