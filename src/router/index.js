@@ -4,7 +4,7 @@ import Home from '../views/Home.vue';
 
 Vue.use(VueRouter);
 
-const createRouter = () => {
+export const createRouter = () => {
   const routes = [
     {
       path: '/',
@@ -29,5 +29,3 @@ const createRouter = () => {
 
   return router;
 };
-
-export { createRouter };

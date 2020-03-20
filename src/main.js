@@ -6,7 +6,7 @@ import { createStore } from './store';
 
 Vue.config.productionTip = false;
 
-const createApp = (context) => {
+export const createApp = (context) => {
   // create router and store instances
   const router = createRouter();
   const store = createStore();
@@ -23,5 +23,3 @@ const createApp = (context) => {
 
   return { app, router, store };
 };
-
-export { createApp };

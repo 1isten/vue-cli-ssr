@@ -3,7 +3,7 @@ import Vuex from 'vuex';
 
 Vue.use(Vuex);
 
-const createStore = () => {
+export const createStore = () => {
   const store = new Vuex.Store({
     state: {
     },
@@ -19,5 +19,3 @@ const createStore = () => {
 
   return store;
 };
-
-export { createStore };
