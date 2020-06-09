@@ -18,7 +18,7 @@ export const createApp = (context) => {
     data: { url: context ? context.url : '' },
     router,
     store,
-    render: h => h(App),
+    render: (h) => h(App),
   });
 
   return { app, router, store };

@@ -1,6 +1,6 @@
 const express = require('express');
 const { createBundleRenderer } = require('vue-server-renderer');
-const template = require('fs').readFileSync('./src/index.template.html', 'utf-8');
+const template = require('fs').readFileSync('./src/assets/index.template.html', 'utf-8');
 const serverBundle = require('./public/vue-ssr-server-bundle.json');
 const clientManifest = require('./public/vue-ssr-client-manifest.json');
 
@@ -20,11 +20,11 @@ app.get('*', (req, res) => {
   // executing the bundle. Now our server is decoupled from our Vue app!
   renderer.renderToString(context, (err, html) => {
     if (err) {
-      console.error(err);
       if (err.code === 404) {
         res.status(404).end('Page not found');
       } else {
         res.status(500).end('Internal Server Error');
+        console.error(err);
       }
     } else {
       res.end(html);
