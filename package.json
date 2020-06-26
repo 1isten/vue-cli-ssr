@@ -5,11 +5,11 @@
   "scripts": {
     "start": "node -r dotenv/config app.js",
     "serve": "vue-cli-service serve",
-    "prebuild": "rm -rf public/{js,css,fonts,img}",
+    "prebuild": "rimraf public/{js,css,fonts,img}",
     "build": "npm run build:client && npm run build:server",
-    "postbuild": "rm public/index.html",
-    "build:client": "TARGET_ENV='client' vue-cli-service build --no-clean",
-    "build:server": "TARGET_ENV='server' vue-cli-service build --no-clean",
+    "postbuild": "rimraf public/index.html",
+    "build:client": "cross-env TARGET_ENV=client vue-cli-service build --no-clean",
+    "build:server": "cross-env TARGET_ENV=server vue-cli-service build --no-clean",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -31,9 +31,11 @@
     "@vue/cli-service": "^4.4.1",
     "@vue/eslint-config-airbnb": "^5.0.2",
     "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.2",
     "eslint": "^6.8.0",
     "eslint-plugin-import": "^2.21.2",
     "eslint-plugin-vue": "^6.2.2",
+    "rimraf": "^3.0.2",
     "vue-template-compiler": "^2.6.11"
   }
 }
