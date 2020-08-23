@@ -48,5 +48,5 @@ const cilentConfig = {
 
 module.exports = {
   outputDir: 'public',
-  configureWebpack: process.env.TARGET_ENV === 'server' ? serverConfig : cilentConfig,
+  configureWebpack: process.env.VUE_ENV === 'server' ? serverConfig : cilentConfig,
 };
