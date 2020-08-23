@@ -7,10 +7,15 @@
 
 <script>
 // @ is an alias to /src
+import titleMixin from '@/mixins/title-mixin.js';
 import HelloWorld from '@/components/HelloWorld.vue';
 
 export default {
   name: 'Home',
+  mixins: [titleMixin],
+  title() {
+    return 'Home';
+  },
   components: {
     HelloWorld,
   },
