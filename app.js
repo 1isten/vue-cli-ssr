@@ -1,6 +1,6 @@
 const express = require('express');
 const { createBundleRenderer } = require('vue-server-renderer');
-const template = require('fs').readFileSync('./src/assets/index.template.html', 'utf-8');
+const template = require('fs').readFileSync('./index.template.html', 'utf-8');
 const serverBundle = require('./public/vue-ssr-server-bundle.json');
 const clientManifest = require('./public/vue-ssr-client-manifest.json');
 
