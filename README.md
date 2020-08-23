@@ -2,19 +2,21 @@
 
 Vue CLI 4 project configured to support [SSR](https://ssr.vuejs.org/).
 
+> I **highly recommend** to use `yarn` instead of `npm` because `npm` is not reliable for resolving `package-lock.json`, sometimes it just doesn't respect the lock file. If you don't have `yarn` installed, using `npm` should still be ok though.
+
 ## Project setup
-```
-npm install
+```bash
+yarn # or `npm install`
 ```
 
 ### Compiles and hot-reloads for development (SPA)
-```
-npm run serve
+```bash
+yarn serve # or `npm run serve`
 ```
 
 ### Compiles and minifies for production (SSR)
-```
-npm run build
+```bash
+yarn build # or `npm run build`
 
-npm start
+yarn start # or `npm start`
 ```

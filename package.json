@@ -6,10 +6,8 @@
     "start": "node -r dotenv/config app.js",
     "serve": "vue-cli-service serve",
     "prebuild": "rimraf public/{js,css,fonts,img}",
-    "build": "npm run build:client && npm run build:server",
+    "build": "cross-env TARGET_ENV=client vue-cli-service build --no-clean && cross-env TARGET_ENV=server vue-cli-service build --no-clean",
     "postbuild": "rimraf public/index.html",
-    "build:client": "cross-env TARGET_ENV=client vue-cli-service build --no-clean",
-    "build:server": "cross-env TARGET_ENV=server vue-cli-service build --no-clean",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
