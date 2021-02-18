@@ -21,12 +21,3 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
-
-# build output files
-public/js
-public/css
-public/fonts
-public/img
-public/index.html
-public/vue-ssr-client-manifest.json
-public/vue-ssr-server-bundle.json
